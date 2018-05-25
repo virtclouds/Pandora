@@ -50,6 +50,7 @@ GATEWAY=6.19.5.254
 ```
 
 **3. Create a route configuration file**
+
 Multiple bond network with multiple gateways, we need to config the static route to make sure every bond can be accessed.
 
 `# vi /etc/sysconfig/network-scripts/route-admin`
