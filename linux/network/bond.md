@@ -49,11 +49,21 @@ DEVICE=admin
 GATEWAY=6.19.5.254
 ```
 
-**3. Restart network service**
+**3. Create a route configuration file**
+Multiple bond network with multiple gateways, we need to config the static route to make sure every bond can be accessed.
+
+`# vi /etc/sysconfig/network-scripts/route-admin`
+
+```
+6.19.0.0/16 via 6.19.5.254 dev storage
+```
+
+
+**4. Restart network service**
 
 `# systemctl restart network`
 
-**4. Test configuration**
+**5. Test configuration**
 
 `# cat /proc/net/bonding/admin`
 ```
