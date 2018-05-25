@@ -56,7 +56,7 @@ Multiple bond network with multiple gateways, we need to config the static route
 `# vi /etc/sysconfig/network-scripts/route-admin`
 
 ```
-6.19.0.0/16 via 6.19.5.254 dev storage
+6.19.0.0/16 via 6.19.5.254 dev admin
 ```
 
 
