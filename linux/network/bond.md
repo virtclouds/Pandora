@@ -46,7 +46,6 @@ IPADDR=6.19.5.41
 NETMASK=255.255.255.0
 BONDING_OPTS="mode=1 miimon=100"
 DEVICE=admin
-GATEWAY=6.19.5.254
 ```
 
 **3. Create a route configuration file**
