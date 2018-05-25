@@ -1,4 +1,3 @@
-
 ###Linux Bond
 
 >The configuration below is only verified on centos7.
