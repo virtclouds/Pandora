@@ -2,7 +2,7 @@
 
 >The configuration below is only verified on centos7.
 
-1. Modify eno1 and eno2 config files
+**1. Modify eno1 and eno2 config files**
 
 Open both configuration using a text editor such as vi/vim, and make sure file read as follows for eno1 interface.
 
@@ -30,7 +30,7 @@ DEVICE=eno1
 MASTER=admin
 ```
 
-2. Create a bond configuration file
+**2. Create a bond configuration file**
 
 `# vi /etc/sysconfig/network-scripts/ifcfg-admin`
 
@@ -49,11 +49,11 @@ DEVICE=admin
 GATEWAY=6.19.5.254
 ```
 
-3. Restart network service
+**3. Restart network service**
 
 `# systemctl restart network`
 
-4. Test configuration
+**4. Test configuration**
 
 `# cat /proc/net/bonding/admin`
 ```
