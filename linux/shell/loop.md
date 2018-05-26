@@ -1,4 +1,4 @@
-### for 循环
+### for 循环语句
 普通循环
 ```
 for i in 0 1 2  
@@ -30,5 +30,17 @@ for x in /var/log/*
 do
         #echo "$x is a file living in /var/log"
         echo $(basename $x) is a file living in /var/log
+done
+```
+
+### while循环语句
+
+```
+#!/bin/bash
+myvar=1
+while [ $myvar -le 10 ]
+do
+        echo $myvar
+        myvar=$(( $myvar + 1 ))
 done
 ```
